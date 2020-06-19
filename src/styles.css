@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.chevron {
+  background: darkgrey;
+  padding: 8px;
+}
+
+p {
+  line-height: 20px;
+}
+
+.chevron.active {
+  background: yellow;
+}
+
+.active .chevron-right {
+  margin: 0px;
+  display: inline-block;
+  height: 20px;
+  transform: rotate(90deg) translateY(-5px) translateX(3px);
+}
+
+.chevron-right {
+  height: 20px;
+  transform: translateY(2px) translateX(3px);
+}
+
+.accordion-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height ease-in 1s;
+}
